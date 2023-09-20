@@ -20,5 +20,5 @@ app.set('view engine', 'ejs');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 console.log(__dirname);
-app.set('views',join(__dirname,'view')); //ruta absoluta para ver las paginas 
+app.set('views',join(__dirname,'views')); //ruta absoluta para ver las paginas 
 app.use(indexRouter); // llamamos las rutas de acceso a cada pagina de mi app 
