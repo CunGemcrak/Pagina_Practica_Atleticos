@@ -1,0 +1,146 @@
+/* Estilos generales para todas las pantallas */
+*{
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: rgb(56, 1, 40);
+    color: black;
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+  }
+
+  header {
+        padding: 20px;
+  }
+
+  .container_general{
+    width: 100%;
+    height: 100%;
+    background: rgba(231, 126, 126, 0.1);
+    display: flex;
+  }
+  .login_index{
+    display: flex;
+    width: 50%;
+    background:rgb(255, 0, 0);
+    text-align: center;
+    justify-content: center;
+    border-right: 1px solid black; /* Grosor 4px, color negro */
+  }
+  .login_index img{
+  width: auto;
+  height: auto;
+}
+
+
+.login{
+  display: flex;
+  background-color:white;
+  width: 50%;  
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+ 
+ }
+
+ .login h4{ 
+  text-align: justify;
+
+ }
+ .login p{ 
+  text-align: center;
+  justify-content: center;
+
+  
+ }
+.contexto_login{
+  text-align: center;
+  justify-content: center;
+  border:3px solid rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 50%;
+  height: auto;
+  margin: 20px;
+  padding: 10px;
+  min-width: 200px;
+ 
+}
+
+.contexto_login input{
+ 
+  display: flex;
+  flex-direction: column;
+}
+.atleticos_login{
+ font-weight: bold;
+  margin-right: 20px;
+  margin-left: 5px;
+  text-align: justify;
+  text-transform: uppercase;
+  
+}
+.atleticos_login::before{
+  content: "";
+  width: 3%;
+  height: 7px;
+  background-color:red;
+  position: absolute;
+  
+ }
+
+ .atleticos_login::after{
+  content: "";
+ }
+  
+  /* Reglas CSS para pantallas más pequeñas (por ejemplo, dispositivos móviles) */
+  
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    header {
+      padding: 10px;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+    .login_index{
+      display: none;
+    }
+
+    .login{
+    
+      width: 100%;  
+     
+     }
+  }
+  
+  /* Reglas CSS para pantallas medianas (por ejemplo, tabletas) */
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+      padding: 15px;
+    }
+  
+    .container {
+      padding: 15px;
+    }
+  }
+  
+  /* Reglas CSS para pantallas más grandes (por ejemplo, computadoras de escritorio) */
+  
+  @media screen and (min-width: 1025px) {
+    header {
+      padding: 20px;
+    }
+  
+    .container {
+      padding: 20px;
+    }
+  }

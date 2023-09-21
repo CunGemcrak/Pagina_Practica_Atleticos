@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%=title%></title>
+      <%- include('partails/head') -%>
 </head>
 <body>
-    
+    <header style="display: none;">
+
+    </header>
+    <div class="container_general">
+        <div class="login_index">
+                <img src="img/atleticos_trasnparente.svg"/>
+        </div>
+        <div class="login">
+            <div class="contexto_login">
+                
+                <h1 class="atleticos_login" >Atleticos</h1>
+                <h4>¡Bienvenido Nuevametne!<img src="img/icon/beisbol.png" width="10%"></h4>
+                <p>Ingresa al mundo del softbol Atleticos</p>
+               
+               
+                <div class="input-group p-1 position-relative">
+                    <div class="input-group-text bg-danger icon-user " style="color: white;"></div>
+                <input type="text" class="form-control" placeholder="Nombre Usuario" >
+               </div>
+               
+               
+               <div class="input-group p-1 position-relative">
+                    <div class="icon-key input-group-text bg-danger " style="color: white;"></div>
+                    <input type="password" class="form-control" placeholder="Contraseña">
+                    <div type="button"  id="ver" name="ver"  class="btn icon-eye input-group-text btn-light" 
+                    onclick="enviar()"></div>
+                </div>
+                <div type="button" class="btn  btn-dark mt-2">Ingresa</div>
+                <p>¿Aun no estas Registrado? ingresa aquí</p>
+            </div>
+        </div>
+
+
+         </div>
+       
+    </div>
+    <%- include('partails/footer') -%>
 </body>
 </html>
