@@ -45,8 +45,9 @@
   footer{
   background-color: black;
     padding: .4em 0;
-    text-align: auto;
-    margin-top:auto;
+    text-align: center;
+    align-items: center;
+    margin-top:0;
     justify-content: center;
   
    

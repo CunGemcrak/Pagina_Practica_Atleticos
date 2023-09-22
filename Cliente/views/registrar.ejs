@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <%- include('partails/head') -%>
+</head>
+<body>
+    <header style="display: none;">
+
+    </header>
+    <div class="container_general">
+        <div class="login_index">
+                <img src="img/atleticos_trasnparente.svg"/>
+        </div>
+        
+        
+        
+        <div class="login">
+            <div class="contexto_login">
+                
+                <h1 class="atleticos_login" >Atleticos</h1>
+                <h4>¡Bienvenido! <img src="img/icon/beisbol.png" width="10%"></h4>
+                <p>Atleticos te brinda este espacio para compartir con tu comunidad y familia de softbol y beisbol</p>
+               
+               
+                <div class="input-group p-1 position-relative">
+                    
+                <input type="text" class="form-control" placeholder="Nombre" >
+                <input type="text" class="form-control" placeholder="Apellido" >
+               </div>
+               
+               
+               <div class="input-group p-1 position-relative">
+                   <input type="text" class="form-control" placeholder="ciudad" >
+                </div>
+
+                <div class="input-group p-1 position-relative">
+                    <div class="input-group-text bg-black icon-user " style="color: red;"></div>
+                <input type="text" class="form-control" placeholder="ejemplo@atletico.com" >
+               </div>
+               
+               
+               <div class="input-group p-1 position-relative">
+                    <div class="icon-key input-group-text bg-black " style="color: red;"></div>
+                    <input type="password" class="form-control" placeholder="Contraseña">
+                    <div type="button"  id="ver" name="ver"  class="btn icon-eye input-group-text btn-light" 
+                    onclick="enviar()"></div>
+               </div>
+               <div class="alinear_caracteres">
+               <div class="input-group p-1 position-relative">
+                <label style="font-size: 12px; font-style: italic; font-weight: bold; padding: 10px; margin: 10px;"><span></span> Más de 8 caracteres</label>
+                <label style="font-size: 12px; font-style: italic; font-weight: bold; padding: 10px; margin: 10px;"><span></span> Una Mayuscula</label>
+               </div>
+               <div class="input-group p-1 position-relative">
+                <label style="font-size: 12px; font-style: italic; font-weight: bold; padding: 10px; margin: 10px;"><span></span> Un caracter especial</label>
+                <label style="font-size: 12px; font-style: italic; font-weight: bold; padding: 10px; margin: 10px;"><span></span> Al menos un número</label>
+               </div>
+            </div>
+
+
+
+                <div type="button" class="btn  btn-dark mt-2">Ingresa</div>
+                <p>¿Aun no estas Registrado? ingresa aquí</p>
+            </div>
+        </div>
+
+
+      
+
+
+
+         </div>
+       
+    </div>
+    <%- include('partails/footer') -%>
+</body>
+</html>

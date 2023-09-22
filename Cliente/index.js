@@ -1,6 +1,8 @@
 import express from "express";
 import {dirname, join} from 'path'; // Identificamos directorio padre
 import { fileURLToPath } from 'url'; //identificamos ubicacion de pad
+import {conexion} from './Server/conexion/conexion.js';
+
 
 
 
