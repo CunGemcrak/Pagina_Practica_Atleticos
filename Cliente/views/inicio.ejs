@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <%- include('partails/head') -%>
+    
+</head>
+<body>
+    <header style="margin: 0; padding: 0;">
+        <%- include('partails/navegar') -%>
+        <style>
+           
+            .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                color: white;
+                background: rgba(0, 0, 0, 0.7);
+                border-radius: 10px;
+            }
+    
+            .stadium-info {
+                width: 50%;
+            }
+    
+            .stadium-info h1 {
+                font-size: 24px;
+            }
+    
+         
+    
+            .match-info {
+                width: 50%;
+                height: 75%;
+                
+            }
+    
+            .match-info h1 {
+                font-size: 24px;
+            }
+    
+            .schedule {
+                font-size: 18px;
+                font-weight: bold;
+            }
+    
+            .menu {
+                display: flex;
+                justify-content: space-between;
+                background-color: rgba(0, 0, 0, 0.7);
+                padding: 10px;
+                margin-top: 20px;
+            }
+    
+            .menu-item {
+                color: white;
+                font-weight: bold;
+                padding: 5px 15px;
+                border: 1px solid white;
+                border-radius: 5px;
+            }
+        </style>
+    </header>
+    <div class="container_general" style="background: linear-gradient(to bottom, red, black);">
+        <form action="/gurda_usuario" method="POST" class="container_general">
+
+
+<ul style="list-style-type: none; margin: 0;">
+    <li class="section" style="background-color: white;  list-style-type: none; height: 300px; width:70rem; border: 2px solid black; margin: 2px 2px 2px 2px;"><div >
+
+        <div class="container">
+            <div class="stadium-info">
+                <h1>Nombre del Estadio</h1>
+                <img src="./img/atleticos_trasnparente.svg" alt="Imagen del estadio" style="height: 100px; width:70rem;"">
+                <div class="menu">
+                    <div class="menu-item">Cancelar</div>
+                    <div class="menu-item">Activa</div>
+                    <div class="menu-item">Organizador</div>
+                </div>
+            </div>
+            <div class="match-info">
+                <h1>Fecha del partido</h1>
+                <p class="schedule">Programación:</p>
+                <p>1 - Equipo 1 VS Equipo 2</p>
+                <p>2 - Equipo 1 VS Equipo 2</p>
+                <p>3 - Equipo 1 VS Equipo 2</p>
+                <p>4 - Equipo 1 VS Equipo 2</p>
+                <p>5 - Equipo 1 VS Equipo 2</p>
+            </div>
+           
+        </div>
+        
+
+
+        <p>hola <%- usuario.usuario -%></p>
+        <p>hola <%- usuario.clave -%></p>
+
+
+
+
+
+
+    </div></li>
+    <li class="section" style="background-color: white; list-style-type: none; height: 300px; width: 70rem; border: 2px solid black; margin: 2px 2px 2px 2px;">
+
+    </li>
+    
+  </ul>
+
+
+
+
+<div class="noticias2" style="background-color: white; height: 600px; width: 25%; border: 2px solid red; margin: 2px 2px 2px 2px;">
+
+</div>
+            
+
+
+
+
+
+
+
+
+
+            
+        </form>
+    </div>
+    <%- include('partails/footer') -%>
+    <script  type="text/JavaScript" src="/js/inicio.js"></script>
+</body>
+<script></script>
+</html>

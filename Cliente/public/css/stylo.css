@@ -33,7 +33,17 @@ body {
   width: auto;
   height: auto;
 }
+.error_key{
+ 
+  color: red;
+}
 
+.buena_key{
+  
+  color: rgb(211, 207, 207);
+  border: 0px solid rgba(177, 152, 152, 0.308);
+  border-radius: 10px 10px 10px 10px;
+}
 
 .login{
   display: flex;
@@ -69,13 +79,21 @@ body {
   min-width: 350px;
  
 }
-
+.boton_incativo{
+  pointer-events: none;
+  opacity: 0.5; 
+}
 .contexto_login input{
  
   display: flex;
   flex-direction: column;
-  
 }
+.errordeinput{
+  border: 2px solid red;
+}
+
+
+
 .contexto_login img{
   margin:5px;
 }
@@ -105,6 +123,24 @@ body {
   align-items: center;
   margin: 10px;
  }
+
+
+/* error de campo*/
+.error_campo{
+  border: 2px solid red;
+  border-radius: 10px;
+}
+
+.coloricono{
+  color: rgb(0, 255, 191);
+}
+
+
+
+
+
+
+
   
   /* Reglas CSS para pantallas más pequeñas (por ejemplo, dispositivos móviles) */
   

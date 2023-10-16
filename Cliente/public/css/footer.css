@@ -19,6 +19,27 @@
     font-style: oblique;
   }
   
+  .atleticos_menu{
+    font-size:larger;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: double rgba(255, 255, 255, 0.795);
+    margin-right: 20px;
+    margin-left: 5px;
+  }
+  .atleticos_menu::before{
+    content: "";
+    width: 1%;
+    height: 4px;
+    background-color:red;
+    position: absolute;
+    
+   }
+   .atleticos_menu::after{
+    content: "";
+  
+   }
+
   .atleticos{
     
     font-size:larger;
